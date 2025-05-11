@@ -1,0 +1,67 @@
+/* Estilos generales */
+.content-container {
+  min-height: calc(100vh - 56px);
+  padding-bottom: 30px;
+}
+
+/* Animaciones para carga */
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Estilos para tarjetas */
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Estilos para botones */
+.btn {
+  border-radius: 4px;
+}
+
+/* Estilos para tablas */
+.table th {
+  background-color: #f8f9fa;
+}
+
+/* Estilos para formularios */
+.form-control:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.invalid-feedback {
+  font-size: 80%;
+}
+
+/* Estilos para elementos de navegación */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .btn-block-xs {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
