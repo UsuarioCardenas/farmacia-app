@@ -1,10 +1,10 @@
 // Importar rutas
-const authRoutes = require('./routes/auth.routes');
-const laboratorioRoutes = require('./routes/laboratorio.routes');
-const medicamentoRoutes = require('./routes/medicamento.routes');
-const ordenCompraRoutes = require('./routes/ordenCompra.routes');
-const detalleOrdenCompraRoutes = require('./routes/detalleOrdenCompra.routes');
-const roleRoutes = require('./routes/role.routes');
+const authRoutes = require('./src/routes/auth.routes');
+const laboratorioRoutes = require('./src/routes/laboratorio.routes');
+const medicamentoRoutes = require('./src/routes/medicamento.routes');
+const ordenCompraRoutes = require('./src/routes/ordenCompra.routes');
+const detalleOrdenCompraRoutes = require('./src/routes/detalleOrdenCompra.routes');
+const roleRoutes = require('./src/routes/role.routes');
 
 // Rutas API
 app.use('/api/auth', authRoutes);
