@@ -1,29 +1,3 @@
-const express = require('express');
-const cors = require('cors');
-const { sequelize } = require('./models');
-require('dotenv').config();
-
-// Importar rutas
-const authRoutes = require('./routes/auth.routes');
-const laboratorioRoutes = require('./routes/laboratorio.routes');
-const medicamentoRoutes = require('./routes/medicamento.routes');
-const ordenCompraRoutes = require('./routes/ordenCompra.routes');
-const detalleOrdenCompraRoutes = require('./routes/detalleOrdenCompra.routes');
-const roleRoutes = require('./routes/role.routes');
-
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const { sequelize } = require('./models');
-require('dotenv').config();
-
-const app = express();
-
-// Middleware
-app.use(cors());
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-
 // Importar rutas
 const authRoutes = require('./routes/auth.routes');
 const laboratorioRoutes = require('./routes/laboratorio.routes');
